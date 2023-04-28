@@ -1,0 +1,260 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column !important;
+  }
+}
+
+.hero-blur {
+  width: 22rem;
+  height: 30rem;
+  left: 0;
+}
+
+.left-h {
+  padding: 2rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex: 3;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.the-best-add {
+  margin-top: 4rem;
+  background-color: #363d42;
+  width: fit-content;
+  border-radius: 4rem;
+  text-transform: uppercase;
+  padding: 20px 1rem;
+  color: var(--white);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 3;
+}
+@media screen and (max-width: 768px) {
+  .the-best-add {
+    margin-top: 0;
+    font-size: small;
+    align-self: center;
+    transform: scale(0.8);
+  }
+}
+.the-best-add > span {
+  z-index: 1;
+}
+.the-best-add > div {
+  position: absolute;
+  background-color: var(--orange);
+  width: 5.3rem;
+  height: 70%;
+  border-radius: 3rem;
+  left: 10px;
+  z-index: 1;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: var(--white);
+  text-overflow: inherit;
+}
+.hero-text div:last-child {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text div:last-child {
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+
+.figures {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+}
+.figures > div {
+  display: flex;
+  flex-direction: column;
+}
+.figures > div > span:first-child {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.figures > div > span:last-child {
+  color: var(--grey);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .figures > div > span:first-child {
+    font-size: large;
+  }
+  .figures > div > span:last-child {
+    font-size: small;
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+.hero-buttons .btn {
+  text-align: center;
+  color: var(--white);
+  width: 8rem;
+}
+.hero-buttons > div:first-child {
+  background-color: var(--orange);
+}
+.hero-buttons > div:last-child {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.right-h {
+  flex: 1;
+  position: relative;
+  background-color: var(--orange);
+}
+@media screen and (max-width: 768px) {
+  .right-h {
+    background: none;
+  }
+}
+
+.right-h > .btn {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+}
+
+.heart-rate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background-color: var(--darkGrey);
+  width: fit-content;
+  padding: 1rem;
+  font-weight: 500;
+  align-items: center;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 4rem;
+  top: 7rem;
+}
+@media screen and (max-width: 768px) {
+  .heart-rate {
+    left: 1rem;
+    top: 2rem;
+  }
+}
+.heart-rate > img {
+  width: 2rem;
+}
+.heart-rate > span:first-of-type {
+  color: var(--gray);
+}
+.heart-rate > span:last-of-type {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.hero-image {
+  position: absolute;
+  top: 10rem;
+  right: 60%;
+  width: 23rem;
+}
+.hero-image-back {
+  position: absolute;
+  top: 4rem;
+  right: 95%;
+  z-index: -1;
+  width: 15rem;
+}
+@media screen and (max-width: 768px) {
+  .hero-image {
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    top: 10rem;
+  }
+  .hero-image-back {
+    width: 10rem;
+    left: 5rem;
+    top: 5rem;
+  }
+}
+
+.calories {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--caloryCard);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: max-content;
+  position: absolute;
+  top: 34rem;
+  right: 150%;
+}
+.calories > img {
+  width: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .calories {
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+  }
+  .calories > img {
+    width: 2rem;
+  }
+}
+.calories > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.calories > div > span:first-of-type {
+  color: var(--gray);
+}
+.calories > div > span:last-of-type {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  gap: 5px;
+}
+@media screen and (max-width: 768px) {
+  .calories > div > span:last-child {
+    font-size: 1rem;
+  }
+}
+
